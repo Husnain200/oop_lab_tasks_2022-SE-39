@@ -1,0 +1,22 @@
+Vehicle Rental System - Design Note
+
+Q1. How do you model the vehicle types?
+
+I will use inheritance.
+Vehicle will be the base class and Car, Motorbike and Truck
+will be derived classes because they are all types of vehicles.
+
+Q2. Where does pricing logic live?
+
+I will use a virtual calculateCost() function in Vehicle.
+Each derived class will override it.
+
+Q3. Who owns rental records?
+
+RentalSystem will own all rental records because it manages
+the whole system.
+
+Q4. Where does runtime polymorphism appear?
+
+Runtime polymorphism occurs when a Vehicle pointer calls
+calculateCost().

@@ -1,0 +1,16 @@
+#include "Passenger.h"
+
+Passenger::Passenger(int id, string n) {
+    passengerID = id;
+    name = n;
+}
+
+Passenger::~Passenger() {}
+
+int Passenger::getID() const {
+    return passengerID;
+}
+
+string Passenger::getName() const {
+    return name;
+}
